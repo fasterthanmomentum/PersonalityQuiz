@@ -10,13 +10,47 @@ import UIKit
 
 class QuestionViewController: UIViewController {
 
+    @IBOutlet weak var singleStackView: UIStackView!
+    
+    @IBOutlet weak var multipleStackView: UIStackView!
+    
+    
+    @IBOutlet weak var rangedStackView: UIStackView!
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        updateUI()
+        
+        
     }
     
-
+    func updateUI() {
+        singleStackView.isHidden = true
+        multipleStackView.isHidden = true
+        rangedStackView.isHidden = true
+        navigationItem.title = "Question #\(questionIndex+1)"
+        
+        let currentQuestion = questions[questionIndex]
+        
+        switch currentQuestion.type {
+        case .single:
+            singleStackView.isHidden = false
+        case .multiple:
+            multipleStackView.isHidden = false
+        case .ranged:
+            rangedStackView.isHidden = false
+            
+        }
+        
+        
+    }
     /*
     // MARK: - Navigation
 
