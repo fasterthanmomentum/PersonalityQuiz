@@ -116,6 +116,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q74-Rf-94Q">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="i9B-1P-5SO" eventType="touchUpInside" id="lYi-Hu-dIB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wu-iT-A5R">
                                         <rect key="frame" x="0.0" y="50" width="414" height="30"/>
@@ -274,8 +277,8 @@
                         <outlet property="multipleStackView" destination="YWN-LJ-1FB" id="Fcm-pi-emx"/>
                         <outlet property="questionLabel" destination="kC1-Uo-liy" id="B3i-RJ-MqU"/>
                         <outlet property="questionProgressView" destination="SMf-nd-ID3" id="j5c-H7-937"/>
-                        <outlet property="rangeLabel1" destination="53n-0Y-y4G" id="Ogt-uH-ptx"/>
-                        <outlet property="rangeLabel2" destination="e1D-dJ-dkd" id="LS4-ra-WAc"/>
+                        <outlet property="rangedLabel1" destination="53n-0Y-y4G" id="S2e-bP-3hZ"/>
+                        <outlet property="rangedLabel2" destination="e1D-dJ-dkd" id="owu-ck-72k"/>
                         <outlet property="rangedStackView" destination="ZtV-Hg-Vgb" id="rOp-Cr-F6Y"/>
                         <outlet property="singleButton1" destination="q74-Rf-94Q" id="Iv1-q1-rMd"/>
                         <outlet property="singleButton2" destination="5wu-iT-A5R" id="hyf-th-RQg"/>
