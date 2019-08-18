@@ -343,6 +343,10 @@
                     <navigationItem key="navigationItem" title="Results" id="JF3-RA-TrZ">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="cu7-q1-i0h"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="7WS-6q-2w3" id="q6p-9Y-Isu"/>
+                        <outlet property="resultDefinitionLabel" destination="HiN-Q9-1bA" id="ikY-2H-Qv8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AmA-ZD-7sC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
