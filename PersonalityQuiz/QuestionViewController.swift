@@ -10,15 +10,41 @@ import UIKit
 
 class QuestionViewController: UIViewController {
 
+    @IBOutlet weak var questionLabel: UILabel!
+    
+    
+    
     @IBOutlet weak var singleStackView: UIStackView!
     
-    @IBOutlet weak var multipleStackView: UIStackView!
+    @IBOutlet weak var singleButton1: UIButton!
     
+    @IBOutlet weak var singleButton2: UIButton!
+   
+    @IBOutlet weak var singleButton3: UIButton!
+    
+    
+    @IBOutlet weak var singleButton4: UIButton!
+    
+    
+    
+    @IBOutlet weak var multipleStackView: UIStackView!
+   
+    @IBOutlet weak var multilabel1: UILabel!
+    
+    @IBOutlet weak var multilabel2: UILabel!
+    
+    
+    @IBOutlet weak var multilabel3: UILabel!
+    
+    @IBOutlet weak var multilabel4: UILabel!
     
     @IBOutlet weak var rangedStackView: UIStackView!
     
+    @IBOutlet weak var rangeLabel1: UILabel!
     
+    @IBOutlet weak var rangeLabel2: UILabel!
     
+    @IBOutlet weak var questionProgressView: UIProgressView!
     
     
     
